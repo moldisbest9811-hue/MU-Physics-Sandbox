@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="MU Physics Sandbox — browser-based 3D physics playground.">
+  <title>MU Physics Sandbox</title>
+</head>
+<body>
+  <div id="game-root"></div>
+  <div id="loading"><strong>MU</strong><span>MU PHYSICS SANDBOX</span><small>INITIALIZING SIMULATION...</small></div>
+  <div id="hud">
+    <header><div class="brand"><b>MU</b> PHYSICS SANDBOX <small>WEB BUILD 0.1</small></div><div class="live"><i></i> SIMULATION</div></header>
+    <div class="crosshair"><i></i></div>
+    <aside class="controls"><h3>CONTROLS</h3><p><kbd>W A S D</kbd> Move</p><p><kbd>SPACE</kbd> Jump</p><p><kbd>SHIFT</kbd> Sprint</p><p><kbd>CLICK</kbd> Grab / throw</p><p><kbd>1</kbd> Physics gun</p><p><kbd>2</kbd> Spawn menu</p><p><kbd>ESC</kbd> Unlock mouse</p></aside>
+    <aside class="spawner" id="spawner"><h3>PROP SPAWNER <small>2 TOGGLE</small></h3><div class="spawn-grid">
+      <button data-prop="crate">Crate</button><button data-prop="ball">Ball</button><button data-prop="barrel">Barrel</button><button data-prop="plank">Plank</button><button data-prop="metal">Metal block</button><button data-prop="beach">Beach ball</button>
+    </div></aside>
+    <div class="hint" id="hint">CLICK THE VIEW TO ENTER THE SANDBOX</div>
+    <div class="tool" id="tool">TOOL: PHYSICS GUN</div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
